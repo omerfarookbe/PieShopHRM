@@ -1,0 +1,11 @@
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\bin\Debug\net8.0\PieShopHRM.Shared.deps.json
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\bin\Debug\net8.0\PieShopHRM.Shared.dll
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\bin\Debug\net8.0\PieShopHRM.Shared.pdb
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.AssemblyInfoInputs.cache
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.AssemblyInfo.cs
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.csproj.CoreCompileInputs.cache
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.dll
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\refint\PieShopHRM.Shared.dll
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\PieShopHRM.Shared.pdb
+C:\Users\OmerFarook\Documents\Omer_Projects\Learning\Blazor 8\PieShopHRM.Shared\obj\Debug\net8.0\ref\PieShopHRM.Shared.dll
