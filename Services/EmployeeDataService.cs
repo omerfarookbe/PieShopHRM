@@ -1,4 +1,6 @@
-﻿using PieShopHRM.Contracts.Repositories;
+﻿using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
+using PieShopHRM.Contracts.Repositories;
 using PieShopHRM.Contracts.Services;
 using PieShopHRM.Repositories;
 using PieShopHRM.Shared.Domain;
@@ -9,9 +11,14 @@ namespace PieShopHRM.Services
     {
         private IEmployeeRepository _employeeRepository;
 
-        public EmployeeDataService(IEmployeeRepository employeeRepository)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public EmployeeDataService(IEmployeeRepository employeeRepository, IWebHostEnvironment webHostEnvironment, IHttpContextAccessor httpContextAccessor)
         {
             _employeeRepository = employeeRepository;
+            _webHostEnvironment = webHostEnvironment;
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<IEnumerable<Employee>> GetAllEmployees()
@@ -31,6 +38,17 @@ namespace PieShopHRM.Services
 
         public async Task UpdateEmployee(Employee employee)
         {
+            if (employee.ImageContent != null)
+            {
+                string currentUrl = _httpContextAccessor.HttpContext.Request.Host.Value;
+                var path = $"{_webHostEnvironment.WebRootPath}\\uploads\\{employee.ImageName}";
+                var fileStream = System.IO.File.Create(path);
+                fileStream.Write(employee.ImageContent, 0, employee.ImageContent.Length);
+                fileStream.Close();
+
+                employee.ImageName = $"https://{currentUrl}/uploads/{employee.ImageName}";
+            }
+
             await _employeeRepository.UpdateEmployee(employee);
         }
 
